@@ -12,3 +12,9 @@ commit anything to keep everyday
 
 ## 목록 
 - 번역 :
+
+
+## 참고할 것 
+- [naver open source guide](https://naver.github.io/OpenSourceGuide/book/)
+- [codetriage](https://www.codetriage.com/)
+- [open source guide](https://opensource.guide/legal/)
