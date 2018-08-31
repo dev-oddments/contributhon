@@ -20,3 +20,14 @@ commit anything to keep everyday
 - [open source guide](https://opensource.guide/legal/)
 
 https://www.openhub.net/
+
+## Issue tip
+```
+ENH: 새기능 혹은 개선
+BUG: 버그수정
+DOC: 문서 업데이트
+TST: 테스트 업데이트
+BLD: 빌드 관련 업데이트
+PERF: 성능개선
+CLN: 코드정리
+```
