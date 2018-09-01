@@ -7,7 +7,7 @@
 * goal: (I haven't set it yet)
 
 ## Journey
-- Opening ceremony(8/16)
+- [개회식](opening-ceremony.md), [KOSSCON](kosscon-2018.md)(8/16)
 - Day 1([8/20](record_day1.md))
 - Day 2([8/27](record_day2.md))
 - Day 3(9/10)
