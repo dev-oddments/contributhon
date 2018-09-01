@@ -1,4 +1,4 @@
-# 2018 OSS Contributhon [[Link]](https://contributhon.kr) | 8/16 ~ 10/31
+# 2018 OSS Contributhon | 8/16 ~ 10/31 - [[Link]](https://contributhon.kr)
 
 > to study contribution for OSS(Open Source Software)
 
@@ -8,15 +8,15 @@
 
 ## Journey
 - Opening ceremony(8/16)
-- Day 1(8/20)
-- Day 2(8/27)
+- Day 1([8/20](record_day1.md))
+- Day 2([8/27](record_day2.md))
 - Day 3(9/10)
 
 ---
 
 ## Classify opensource lisence
 ### 1. GNU GPL(General Public License)
-> GPL [FAQ]()
+> GPL [FAQ](https://www.gnu.org/licenses/gpl-faq.en.html)
 * 유료로 판매 가능하지만 전체소스를 공개해야 함 
 * 내부적인 목적으로만 사용할 때 소스코드를 공개 할 필요 없지만 외부에 배포할 때에는 전체소스를 공개해야 함 
 * GPL 코드를 일부라도 사용하게되면 전체를 배포할 때에는 GPL을 적용해야 함
@@ -46,7 +46,6 @@ CLN: 코드정리
 
 ## 목록 
 - 번역 :
-
 
 ## 참고할 것 
 - [naver open source guide](https://naver.github.io/OpenSourceGuide/book/)
