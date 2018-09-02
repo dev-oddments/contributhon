@@ -1,15 +1,15 @@
 # 2018 OSS Contributhon | 8/16 ~ 10/31 - [[Link]](https://contributhon.kr)
 
-> to study contribution for OSS(Open Source Software)
+> Study about OSS(Open Source Software)contribution
 
 ## Uftrace track
 * mentor: 송태웅 / 박한범 / 김재중
 * goal: (I haven't set it yet)
 
 ## Journey
-- [개회식](opening-ceremony.md), [KOSSCON](kosscon-2018.md)(8/16)
-- Day 1([8/20](record_day1.md))
-- Day 2([8/27](record_day2.md))
+- [개회식](opening-ceremony.md), [KOSSCON](kosscon-2018.md) - 8/16
+- [Day 1](record_day1.md) - 8/20
+- [Day 2](record_day2.md) - 8/27
 - Day 3(9/10)
 
 ---
@@ -53,3 +53,7 @@ CLN: 코드정리
 - [open source guide](https://opensource.guide/legal/)
 
 https://www.openhub.net/
+
+## Documentation
+- LaTeX - [Awesome CI](https://github.com/posquit0/Awesome-CV)
+- perfbook - [KO-translate](https://github.com/sjp38/perfbook-ko_KR)
