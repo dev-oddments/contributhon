@@ -14,6 +14,121 @@
 
 ---
 
+## folder structure
+```
+├── arch
+|   ├── aarch64 // 
+|   |   ├── Makefile // 
+|   |   ├── cpuinfo.c // 
+|   |   ├── mcount-arch.h // 
+|   |   ├── mcount-support.c // 
+|   |   ├── mcount.S // 
+|   |   ├── plthook.S // 
+|   |   └── regs.c // 
+|   ├── arm // 
+|   |   ├── Makefile // 
+|   |   ├── cpuinfo.c // 
+|   |   ├── mcount-arch.h // 
+|   |   ├── mcount-support.c // 
+|   |   ├── mcount.S // 
+|   |   ├── plthook.S // 
+|   |   └── regs.c // 
+|   ├── i386 // 
+|   |   ├── Makefile // 
+|   |   ├── cpuinfo.c // 
+|   |   ├── fentry.S // 
+|   |   ├── mcount-arch.h // 
+|   |   ├── mcount-dynamic.c // 
+|   |   ├── mcount-support.c // 
+|   |   ├── mcount.S // 
+|   |   ├── plthook.S // 
+|   |   └── regs.c // 
+|   └── x86_64 //
+|       ├── Makefile // 
+|       ├── cpuinfo.c // 
+|       ├── fentry.S // 
+|       ├── mcount-arch.h // 
+|       ├── mcount-dynamic.c // 
+|       ├── mcount-support.c // 
+|       ├── mcount.S // 
+|       ├── plthook.S // 
+|       ├── regs.c // 
+|       ├── symbol.c // 
+|       └── xray.S // 
+├── check-deps // 
+|   ├── Makefile // 
+|   ├── Makefile.check // 
+|   ├── _arm_has_hardfp.c // 
+|   ├── _cc_has_mfentry.c // 
+|   ├── _cc_has_mno_sse2.c // 
+|   ├── _cc_has_wstringop_truncation.c // 
+|   ├── _clock_without_librt.c // 
+|   ├── _cxa_demangle.c // 
+|   ├── _have_libdw.c // 
+|   ├── _have_libelf.c // 
+|   ├── _have_libncurses.c // 
+|   ├── _have_libpython2.7.c // 
+|   ├── _perf_clockid.c // 
+|   └── _perf_context_switch.c // 
+├── cmds
+|   ├── dump.c // 
+|   ├── graph.c // 
+|   ├── info.c // 
+|   ├── live.c // 
+|   ├── record.c // 
+|   ├── recv.d // 
+|   ├── replay.c // 
+|   ├── report.c // 
+|   ├── script.c // 
+|   └── tui.c // 
+├── doc 
+|   ├── Makefile
+|   ├── uftrace-dump.md
+|   ├── uftrace-graph.md
+|   ├── uftrace-info.md
+|   ├── uftrace-live.md
+|   ├── uftrace-record.md
+|   ├── uftrace-recv.md
+|   ├── uftrace-replay.md
+|   ├── uftrace-report.md
+|   ├── uftrace-script.md
+|   ├── uftrace-tui.md
+|   └── uftrace.md
+├── gdb/uftrace 
+|   ├── lists.py
+|   ├── mcount.py
+|   ├── plthook.py
+|   ├── rbtree.py
+|   ├── trigger.py
+|   └── utils.py
+├── libmcount
+|   ├── dynamic.c
+|   ├── event.c
+|   ├── internal.h
+|   ├── mcount-nop.c
+|   ├── mocunt.c
+|   ├── mocunt.h
+|   ├── misc.c
+|   ├── plthook.c
+|   ├── pmu.c
+|   ├── record.c
+|   └── wrap.c
+├── libtraceevent/
+├── misc/
+├── scripts/
+├── tests/
+├── utils/
+├── .travis.yml
+├── Makefile
+├── Makefile.include
+├── configure
+├── uftrace-gdb.py
+├── uftrace.c
+└── uftrace.h
+```
+
+---
+
 ## Classify opensource lisence
 ### 1. GNU GPL(General Public License)
 > GPL [FAQ](https://www.gnu.org/licenses/gpl-faq.en.html)
