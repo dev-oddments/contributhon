@@ -2,7 +2,7 @@
 
 > Study about OSS(Open Source Software)contribution | [uftrace](https://github.com/namhyung/uftrace)
 
-## Uftrace track
+## uftrace track
 * mentor: 송태웅 / 박한범 / 김재중
 * goal: (I haven't set it yet)
 
@@ -17,70 +17,70 @@
 ## folder structure
 ```
 ├── arch
-|   ├── aarch64 // 
-|   |   ├── Makefile // 
-|   |   ├── cpuinfo.c // 
-|   |   ├── mcount-arch.h // 
-|   |   ├── mcount-support.c // 
-|   |   ├── mcount.S // 
-|   |   ├── plthook.S // 
-|   |   └── regs.c // 
-|   ├── arm // 
-|   |   ├── Makefile // 
-|   |   ├── cpuinfo.c // 
-|   |   ├── mcount-arch.h // 
-|   |   ├── mcount-support.c // 
-|   |   ├── mcount.S // 
-|   |   ├── plthook.S // 
-|   |   └── regs.c // 
-|   ├── i386 // 
-|   |   ├── Makefile // 
-|   |   ├── cpuinfo.c // 
-|   |   ├── fentry.S // 
-|   |   ├── mcount-arch.h // 
-|   |   ├── mcount-dynamic.c // 
-|   |   ├── mcount-support.c // 
-|   |   ├── mcount.S // 
-|   |   ├── plthook.S // 
-|   |   └── regs.c // 
-|   └── x86_64 //
-|       ├── Makefile // 
-|       ├── cpuinfo.c // 
-|       ├── fentry.S // 
-|       ├── mcount-arch.h // 
-|       ├── mcount-dynamic.c // 
-|       ├── mcount-support.c // 
-|       ├── mcount.S // 
-|       ├── plthook.S // 
-|       ├── regs.c // 
-|       ├── symbol.c // 
-|       └── xray.S // 
-├── check-deps // 
-|   ├── Makefile // 
-|   ├── Makefile.check // 
-|   ├── _arm_has_hardfp.c // 
-|   ├── _cc_has_mfentry.c // 
-|   ├── _cc_has_mno_sse2.c // 
-|   ├── _cc_has_wstringop_truncation.c // 
-|   ├── _clock_without_librt.c // 
-|   ├── _cxa_demangle.c // 
-|   ├── _have_libdw.c // 
-|   ├── _have_libelf.c // 
-|   ├── _have_libncurses.c // 
-|   ├── _have_libpython2.7.c // 
-|   ├── _perf_clockid.c // 
-|   └── _perf_context_switch.c // 
+|   ├── aarch64
+|   |   ├── Makefile : 
+|   |   ├── cpuinfo.c : 
+|   |   ├── mcount-arch.h : 
+|   |   ├── mcount-support.c : 
+|   |   ├── mcount.S : 
+|   |   ├── plthook.S : 
+|   |   └── regs.c : 
+|   ├── arm 
+|   |   ├── Makefile : 
+|   |   ├── cpuinfo.c : 
+|   |   ├── mcount-arch.h : 
+|   |   ├── mcount-support.c : 
+|   |   ├── mcount.S : 
+|   |   ├── plthook.S : 
+|   |   └── regs.c : 
+|   ├── i386
+|   |   ├── Makefile : 
+|   |   ├── cpuinfo.c : 
+|   |   ├── fentry.S : 
+|   |   ├── mcount-arch.h : 
+|   |   ├── mcount-dynamic.c : 
+|   |   ├── mcount-support.c : 
+|   |   ├── mcount.S : 
+|   |   ├── plthook.S : 
+|   |   └── regs.c : 
+|   └── x86_64
+|       ├── Makefile : 
+|       ├── cpuinfo.c : 
+|       ├── fentry.S : 
+|       ├── mcount-arch.h : 
+|       ├── mcount-dynamic.c : 
+|       ├── mcount-support.c : 
+|       ├── mcount.S : 
+|       ├── plthook.S : 
+|       ├── regs.c : 
+|       ├── symbol.c : 
+|       └── xray.S : 
+├── check-deps
+|   ├── Makefile : 
+|   ├── Makefile.check : 
+|   ├── _arm_has_hardfp.c : 
+|   ├── _cc_has_mfentry.c : 
+|   ├── _cc_has_mno_sse2.c : 
+|   ├── _cc_has_wstringop_truncation.c : 
+|   ├── _clock_without_librt.c : 
+|   ├── _cxa_demangle.c : 
+|   ├── _have_libdw.c : 
+|   ├── _have_libelf.c : 
+|   ├── _have_libncurses.c : 
+|   ├── _have_libpython2.7.c : 
+|   ├── _perf_clockid.c : 
+|   └── _perf_context_switch.c : 
 ├── cmds
-|   ├── dump.c // 
-|   ├── graph.c // 
-|   ├── info.c // 
-|   ├── live.c // 
-|   ├── record.c // 
-|   ├── recv.d // 
-|   ├── replay.c // 
-|   ├── report.c // 
-|   ├── script.c // 
-|   └── tui.c // 
+|   ├── dump.c : 
+|   ├── graph.c : 
+|   ├── info.c : 
+|   ├── live.c : 
+|   ├── record.c : 
+|   ├── recv.d : 
+|   ├── replay.c : 
+|   ├── report.c : 
+|   ├── script.c : 
+|   └── tui.c : 
 ├── doc 
 |   ├── Makefile
 |   ├── uftrace-dump.md
@@ -113,11 +113,81 @@
 |   ├── pmu.c
 |   ├── record.c
 |   └── wrap.c
-├── libtraceevent/
-├── misc/
-├── scripts/
+├── libtraceevent
+|   ├── include
+|   |   ├── asm
+|   |   |   └── bug.h
+|   |   └── linux
+|   |       └── compiler.h
+|   ├── Makefile
+|   ├── event-parse.c
+|   ├── event-parse.h
+|   ├── event-plugin.c
+|   ├── event-utils.h
+|   ├── kbuffer-parse.c
+|   ├── kbuffer.h
+|   ├── parse-filter.c
+|   ├── parse-utils.c
+|   └── trace-seq.c
+├── misc
+|   ├── apply-patch.sh
+|   ├── bash-completion.sh
+|   ├── debug-mcount.cmd
+|   ├── debug.sh
+|   ├── demangler.c
+|   ├── gen-autoargs.py
+|   ├── install-elfutils.sh
+|   ├── prototypes.h
+|   ├── run-lcov.sh
+|   ├── symbols.c
+|   ├── ubuntu-install-deps.sh
+|   └── version.sh
+├── scripts
+|   ├── count.py
+|   ├── info.py
+|   ├── replay.py
+|   ├── report-libcall.py
+|   ├── simple.py
+|   └── trace-memcpy.py
 ├── tests/
-├── utils/
+├── utils
+|   ├── asm.h
+|   ├── auto-args.c
+|   ├── auto-args.h
+|   ├── compiler.h
+|   ├── data-file.c
+|   ├── debug.c
+|   ├── demangle.c
+|   ├── dwarf.c
+|   ├── dwarf.h
+|   ├── field.c
+|   ├── field.h
+|   ├── filter.c
+|   ├── filter.h
+|   ├── fstack.c
+|   ├── fstack.h
+|   ├── graph.c
+|   ├── graph.h
+|   ├── kernel.c
+|   ├── kernel.h
+|   ├── list.h
+|   ├── pager.c
+|   ├── perf.c
+|   ├── perf.h
+|   ├── rbtree.c
+|   ├── rbtree.h
+|   ├── script-python.c
+|   ├── script-python.h
+|   ├── script.c
+|   ├── script.h
+|   ├── session.c
+|   ├── symbol-libelf.c
+|   ├── symbol-rawelf.c
+|   ├── symbol-rawelf.h
+|   ├── symbol.c
+|   ├── symbol.h
+|   ├── utils.c
+|   └── utils.h
 ├── .travis.yml
 ├── Makefile
 ├── Makefile.include
@@ -154,6 +224,15 @@ TST: 테스트 업데이트
 BLD: 빌드 관련 업데이트
 PERF: 성능개선
 CLN: 코드정리
+
+feat: 새로운 기능을 추가할 경우
+fix: 버그를 고친 경우
+docs: 문서 수정한 경우
+style: 코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우
+refactor: 프로덕션 코드 리팩터링
+test: 테스트 추가, 테스트 리팩터링 (프로덕션 코드 변경 없음)
+chore: 빌드 테스크 업데이트, 패키지 매니저 설정할 경우 (프로덕션 코드 변경 없음)
+[출처](https://sujinlee.me/professional-github/)
 ```
 
 ## My thought
@@ -171,5 +250,5 @@ https://www.openhub.net/
 
 ## Documentation
 - LaTeX - [Awesome CI](https://github.com/posquit0/Awesome-CV)
-- perfbook - [KO-translate](https://github.com/sjp38/perfbook-ko_KR)
+- perfbook - [Korean-translate](https://github.com/sjp38/perfbook-ko_KR)
 - README.md - [badge](https://github.com/Naereen/badges)
