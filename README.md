@@ -199,6 +199,12 @@
 
 ---
 
+## contribute other project
+- [first-contributions](https://github.com/Roshanjossey/first-contributions)
+- [your-first-PR](https://github.com/yourfirstpr/yourfirstpr.github.io)
+- [awesome](https://github.com/sindresorhus/awesome)
+
+
 ## Classify opensource lisence
 ### 1. GNU GPL(General Public License)
 > GPL [FAQ](https://www.gnu.org/licenses/gpl-faq.en.html)
@@ -245,7 +251,13 @@ chore: 빌드 테스크 업데이트, 패키지 매니저 설정할 경우 (프�
 - [naver open source guide](https://naver.github.io/OpenSourceGuide/book/)
 - [codetriage](https://www.codetriage.com/)
 - [open source guide](https://opensource.guide/legal/)
+- [first-timers-only](https://www.firsttimersonly.com)
+- [oepn source firday]()
+- [up-for-grabs](https://up-for-grabs.net/#/)
+- [contributor-ninja](https://contributor.ninja)
+- [24 pull requests](https://24pullrequests.com/)
 
+- [github opensource guide](https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to)
 https://www.openhub.net/
 
 ## Documentation
