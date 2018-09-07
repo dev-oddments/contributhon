@@ -12,6 +12,9 @@
 - [Day 2](record_day2.md) - 8/27
 - Day 3(9/10)
 
+## Link
+- contributhon [dashboard](https://github.com/kosslab-kr/kosscontributhon2018)
+- uftrace [kosslab]
 ---
 
 ## folder structure
