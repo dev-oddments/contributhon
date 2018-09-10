@@ -10,7 +10,7 @@
 - [개회식](opening-ceremony.md), [KOSSCON](kosscon-2018.md) - 8/16
 - [Day 1](record_day1.md) - 8/20
 - [Day 2](record_day2.md) - 8/27
-- Day 3 - 9/10
+- [Day 3](record_day3.md) - 9/10
 
 ## Link
 - contributhon [dashboard](https://github.com/kosslab-kr/kosscontributhon2018)
