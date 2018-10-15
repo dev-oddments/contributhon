@@ -19,7 +19,7 @@ task정보가지 2가지 구조체에 정리되어 있음
 
 ### Improve documentation
 - Honggyu Added slide at
- + 
+ + http://htmlpreview.github.io/?https://github.com/honggyukim/uftrace/blob/slide/caller-filter/doc/uftrace.html#filters
 - We have wiki as well
  + https://github.com/namhyung/uftrace/wiki
 
@@ -127,8 +127,8 @@ task정보가지 2가지 구조체에 정리되어 있음
   + It doesn't exit
   - uftrace gathers info after the exit
   - Add 'finish' action
-  - 'enable'/'disable' can be more efficient
-    - Change first insn of mcount.S to 'ret'
+  - `enable`/`disable` can be more efficient
+    - Change first insn of mcount.S to `ret`
     - How to restore original insn?
     
 ### Multi-date processing
