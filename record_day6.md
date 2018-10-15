@@ -172,3 +172,5 @@ task정보가지 2가지 구조체에 정리되어 있음
         
         $ python -m SimpleHTTPServer 12345 // new world..
 ```
+
+https://docs.python.org/2/library/trace.html
