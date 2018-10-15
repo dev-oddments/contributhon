@@ -11,6 +11,8 @@
 - [Day 1](record_day1.md) - 8/20
 - [Day 2](record_day2.md) - 8/27
 - [Day 3](record_day3.md) - 9/10
+- [Day 4](record_day4.md) - 9/17
+- [Day 6](record_day6.md) - 10/15
 
 ## Link
 - contributhon [dashboard](https://github.com/kosslab-kr/kosscontributhon2018)
