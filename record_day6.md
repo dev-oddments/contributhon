@@ -19,9 +19,9 @@ task정보가지 2가지 구조체에 정리되어 있음
 
 ### Improve documentation
 - Honggyu Added slide at
- + http://htmlpreview.github.io/?https://github.com/honggyukim/uftrace/blob/slide/caller-filter/doc/uftrace.html#filters
+  + http://htmlpreview.github.io/?https://github.com/honggyukim/uftrace/blob/slide/caller-filter/doc/uftrace.html#filters
 - We have wiki as well
- + https://github.com/namhyung/uftrace/wiki
+  + https://github.com/namhyung/uftrace/wiki
 
 ### Report with multi-thread
 - Big data takes a time to process
@@ -31,7 +31,7 @@ task정보가지 2가지 구조체에 정리되어 있음
 
 ### Value filter
 - Filter by value of function argumetns/return
- + Filtering at runtime
+  + Filtering at runtime
   
 ### Size filter
 - Filter by (byte) size of function
