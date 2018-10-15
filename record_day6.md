@@ -174,3 +174,5 @@ task정보가지 2가지 구조체에 정리되어 있음
 ```
 
 https://docs.python.org/2/library/trace.html
+
+> need to organize best practice 
