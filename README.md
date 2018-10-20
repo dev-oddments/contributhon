@@ -4,7 +4,7 @@
 
 ## uftrace track
 * mentor: 송태웅 / 박한범 / 김재중
-* goal: (I haven't set it yet)
+* goal: patch uftrace version(0.8.3 to 0.9)on yocto(http://layers.openembedded.org/layerindex/recipe/68075/)
 
 ## Journey
 - [개회식](opening-ceremony.md), [KOSSCON](kosscon-2018.md) - 8/16
