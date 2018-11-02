@@ -1,6 +1,7 @@
-## process
-- 50gb 이상 용량 확보하기
-- .bb에 끼워넣기 : build complete
+## 주의할 점
+- 빌드를 위해 50gb 이상 용량 확보하기
+## 0.8.3에서의 에러 해결 과정
+- build가 안되는 문제(i386에서 error)를 해결하기 위해 uftrace_0.8.3.bb파일 내부에 아래의 코드를 삽입해야 함
 ```
 def set_target_arch(d):
      import re
@@ -22,9 +23,21 @@ def set_target_arch(d):
  
  COMPATIBLE_HOST = "(i.86|x86_64|aarch64|arm)"
  ```
- - .bb파일 커밋(f0fed0b24a9727ffed04673b62f66baad21a1f99)교체
- - 그 아래아래줄 지우기
- - 그리고 그 자리에 패치를 할 때 한줄 추가해야함.
+ - 이후 이를 포함한 패치 전송 #xx
+ 
+ ## 0.9버전으로 빌드하는 과정
+ ```
+ # v0.8.3
+SRCREV = "8b723a6fae2ef30495cd6279774fba9c95cd9c88"
+SRC_URI = "git://github.com/namhyung/${BPN} \
+           file://0001-include-dlfcn.h-for-RTLD_DEFAULT.patch \
+```
+- SRCREV = "f0fed0b24a9727ffed04673b62f66baad21a1f99" 으로 교체 // 0.9버전 릴리즈에 해당하는 커밋id
+- 0.9 버전에선 패치가 이미 적용되었으므로 SRC_URI 라인에서 해당 패치를 포함시키는 라인 삭제
+- 0.9 버전에 적용해야 할 패치내용을 삽입 
+   - file://0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch
+- 이후 빌드 및 테스트
+
 ## bb
 ```bash
 SUMMARY = "Trace and analyze execution of a program written in C/C++"
