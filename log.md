@@ -305,7 +305,7 @@ DEPENDS_append_libc-musl = " argp-standalone"
 
 inherit autotools
 
-# v0.8.3
+# v0.9
 SRCREV = "f0fed0b24a9727ffed04673b62f66baad21a1f99"
 SRC_URI = "git://github.com/namhyung/${BPN} \
            file://0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch \
