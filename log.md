@@ -223,8 +223,10 @@ Summary: 1 task failed:
   /home/dididy/yocto/poky/meta/recipes-devtools/uftrace/uftrace_0.8.3.bb:do_compile
 Summary: There were 2 ERROR messages shown, returning a non-zero exit code.
 ```
-## 0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch 
+## patch 얻는 법
+> $ git format-patch -1 a6b147196272be97fce978be45a443ef1d979ada
 
+## 0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch 
 ```bash
 From a6b147196272be97fce978be45a443ef1d979ada Mon Sep 17 00:00:00 2001
 From: Leah Neukirchen <leah@vuxu.org>
@@ -288,4 +290,51 @@ index 04aa2b2..8c7e92f 100644
 -- 
 2.7.4
          
+```
+## uftrace_0.9.bb
+```
+SUMMARY = "Trace and analyze execution of a program written in C/C++"
+HOMEPAGE = "https://github.com/namhyung/uftrace"
+BUGTRACKER = "https://github.com/namhyung/uftrace/issues"
+SECTION = "devel"
+LICENSE = "GPLv2"
+LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
+
+DEPENDS = "elfutils"
+DEPENDS_append_libc-musl = " argp-standalone"
+
+inherit autotools
+
+# v0.8.3
+SRCREV = "f0fed0b24a9727ffed04673b62f66baad21a1f99"
+SRC_URI = "git://github.com/namhyung/${BPN} \
+           file://0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch \
+"
+S = "${WORKDIR}/git"
+
+LDFLAGS_append_libc-musl = " -largp"
+
+def set_target_arch(d):
+     import re
+     arch = d.getVar('TARGET_ARCH', True)
+     if re.match(r'i.86', arch, re.I):
+         return 'i386'
+     else:
+         return arch
+
+EXTRA_UFTRACE_OECONF = "ARCH=${@set_target_arch(d)} \
+                        with_elfutils=/use/libelf/from/sysroot"
+
+do_configure() {
+    ${S}/configure ${EXTRA_UFTRACE_OECONF}
+}
+
+FILES_SOLIBSDEV = ""
+FILES_${PN} += "${libdir}/*.so"
+
+COMPATIBLE_HOST = "(i.86|x86_64|aarch64|arm)"
+
+# uftrace supports armv6 and above
+COMPATIBLE_HOST_armv4 = 'null'
+COMPATIBLE_HOST_armv5 = 'null'                                    
 ```
