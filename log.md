@@ -34,8 +34,12 @@ SRC_URI = "git://github.com/namhyung/${BPN} \
 ```
 - SRCREV = "f0fed0b24a9727ffed04673b62f66baad21a1f99" 으로 교체 // 0.9버전 릴리즈에 해당하는 커밋id
 - 0.9 버전에선 패치가 이미 적용되었으므로 SRC_URI 라인에서 해당 패치를 포함시키는 라인 삭제
-- 0.9 버전에 적용해야 할 패치내용을 삽입 
-   - file://0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch
+- 0.9 버전 빌드시 에러발생 원인을 찾아보니 0.9 릴리즈 이후 커밋에서 문제 해결
+  - 해당 커밋을 가지고 다음과 같이 패치를 제작 
+    - git format-patch -1 a6b147196272be97fce978be45a443ef1d979ada
+  - poky/meta/recipes-devtools/uftrace/uftrace 경로에 패치 넣기
+  - 이후 bb파일 SRC_URI아래에 
+  - file://0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch
 - 이후 빌드 및 테스트
 > bitbake uftrace -c cleanall; bitbake uftrace;
 
