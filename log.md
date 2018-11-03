@@ -37,6 +37,7 @@ SRC_URI = "git://github.com/namhyung/${BPN} \
 - 0.9 버전에 적용해야 할 패치내용을 삽입 
    - file://0001-mcount-Use-renamed-struct-mcount_dynamic_info-fields.patch
 - 이후 빌드 및 테스트
+> bitbake uftrace -c cleanall; bitbake uftrace;
 
 ## bb
 ```bash
