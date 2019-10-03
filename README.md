@@ -1,7 +1,7 @@
 # Contributhon
 ## Index
-- 1. [2019 OSS Contributhon - React Native Tutorial]
-- 2. [2018 OSS Contributhon - Uftrace]
+1. [2019 OSS Contributhon - React Native Tutorial](#2019-oss-contributhon-|-9/7-~-10/20)
+2. [2018 OSS Contributhon - Uftrace](#2018-oss-contributhon-|-8/16-~-10/31)
 # 2019 OSS Contributhon | 9/7 ~ 10/20
 
 > Study about OSS(Open Source Software)contribution | [react-native-tutorial](https://github.com/JeffGuKang/react-native-tutorial)
@@ -77,7 +77,7 @@
 - track 기준으로부터 branch가 생성되도록
   - `git checkout -b aaa --track upstream/tutorial/router`
 
-# 2018 OSS Contributhon | 8/16 ~ 10/31 - [[Link]](https://contributhon.kr)
+# 2018 OSS Contributhon | 8/16 ~ 10/31
 
 > Study about OSS(Open Source Software)contribution | [uftrace](https://github.com/namhyung/uftrace)
 
