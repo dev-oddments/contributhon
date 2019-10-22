@@ -1,27 +1,40 @@
 # Contributhon
 ## Index
+1. [2019 Open Software Training](#2019ost)
 1. [2019 OSS Contributhon - React Native Tutorial](#2019)
 2. [2018 OSS Contributhon - Uftrace](#2018)
-# 2019 OSS Contributhon | 9/7 ~ 10/20 <a name="2019"></a>
 
+# 2019 Open Software Training | 2019 Fall Semester <a name="2019ost"></a>
+## 1. 일정
+- [ ] 11/01 : 중간발표
+- [ ] 12/13 : 최종발표
+- [ ] 12/20 : 멘토링
+
+## 2. ToDo
+- [ ] Make [Hyper](https://github.com/zeit/hyper) extension 
+- [ ] Contribute [RNRF](https://github.com/aksonov/react-native-router-flux)
+- [ ] Create Open Source RN module
+- [ ] Make Electron prj
+- ...
+
+
+# 2019 OSS Contributhon | 2019 09/07 ~ 10/20 <a name="2019"></a>
 > Study about OSS(Open Source Software)contribution | [react-native-tutorial](https://github.com/JeffGuKang/react-native-tutorial)
 
 ## react-native-tutorial 
-
-- mentor: 강명구
-- goal: React Native 튜토리얼 제작
+- Mentor: 강명구
+- Goal: React Native 튜토리얼 제작
 
 ## 1. 일정
-
-- 9/21 : 오프라인 멘토링
-- 9/29(일) : 중간보고
-  - [2019-Contributhon-중간보고서-이용재](react-native-tutorial/2019-Contributhon-중간보고서-이용재.pdf)
-- 10/12(토) : 오프라인 멘토링
-- 10/20(일) : 결과보고
-- 11/2(토) : 발표심사
+- [x] 9/21 : 오프라인 멘토링
+- [x] 9/29(일) : 중간보고
+  - [x] [2019-Contributhon-중간보고서-이용재](react-native-tutorial/2019-Contributhon-중간보고서-이용재.pdf)
+- [x] 10/12(토) : 오프라인 멘토링
+- [x] 10/20(일) : 결과보고
+  - [x] [2019-Contributhon-결과보고서-이용재](react-native-tutorial/2019-Contributhon-결과보고서-이용재.pdf)
+- [ ] 11/2(토) : 발표심사
 
 ## 2. Guideline
-
 - 폴더구조
   - 코드:
     - 한개인 경우 - `Examples/BasicTutorial/`
@@ -33,7 +46,7 @@
     - `docs/state-tutorial/set-state-basic-tutorial/01-getting-started/getting-started.md`
     - `docs/state-tutorial/redux-tutorial/01-getting-started/getting-started.md`
     - `docs/state-tutorial/mobx-tutorial/01-getting-started/getting-started.md`
-- 진행과정
+- 진행과정(gitflow 방식 사용)
   - 구현할 부분(작성할 부분)에 대해서 Issue 작성
   - 최신사항 반영 - `git fetch upstream`
   - upstream/state-tutorial 브랜치에서 작업 브랜치(upstream/state-tutorial/{issueNum}-setState-tutorial)를 생성
@@ -59,7 +72,6 @@
     - 참고한 사이트나 자료들
 
 ## 3. tip
-
 - `git log` 커스터마이즈
   - [https://coderwall.com/p/euwpig/a-better-git-log](https://coderwall.com/p/euwpig/a-better-git-log)
   - 현재 브랜치의 log만 보기: `git lg`
@@ -77,17 +89,15 @@
 - track 기준으로부터 branch가 생성되도록
   - `git checkout -b aaa --track upstream/tutorial/router`
 
-# 2018 OSS Contributhon | 8/16 ~ 10/31 <a name="2018"></a>
 
+# 2018 OSS Contributhon | 2018 08/16 ~ 10/31 <a name="2018"></a>
 > Study about OSS(Open Source Software)contribution | [uftrace](https://github.com/namhyung/uftrace)
 
 ## uftrace track
-
 - mentor: 송태웅 / 박한범 / 김재중
 - goal: patch uftrace version(0.8.3 to 0.9)on yocto(http://layers.openembedded.org/layerindex/recipe/68075/)
 
 ## Journey
-
 - [개회식](opening-ceremony.md), [KOSSCON](kosscon-2018.md) - 8/16
 - [Day 1](record_day1.md) - 8/20
 - [Day 2](record_day2.md) - 8/27
@@ -96,7 +106,6 @@
 - [Day 6](record_day6.md) - 10/15
 
 ## Link
-
 - contributhon [dashboard](https://github.com/kosslab-kr/kosscontributhon2018)
 - uftrace [kosslab](https://github.com/kosslab-kr/uftrace)
 - [2016](https://2016.kosshackathon.kr/#kosshack_prize)
@@ -106,7 +115,6 @@
 ---
 
 ## folder structure
-
 > tree 명령어를 사용하면 간단하게 폴더구조를 출력할 수 있다.
 
 ```
@@ -607,7 +615,6 @@
 ---
 
 ## contribute other project
-
 - [first-contributions](https://github.com/Roshanjossey/first-contributions)
 - [your-first-PR](https://github.com/yourfirstpr/yourfirstpr.github.io)
 - [awesome](https://github.com/sindresorhus/awesome)
@@ -615,7 +622,6 @@
 ## Classify opensource lisence
 
 ### 1. GNU GPL(General Public License)
-
 > GPL [FAQ](https://www.gnu.org/licenses/gpl-faq.en.html)
 
 - 유료로 판매 가능하지만 전체소스를 공개해야 함
@@ -623,19 +629,15 @@
 - GPL 코드를 일부라도 사용하게되면 전체를 배포할 때에는 GPL을 적용해야 함
 
 ### 2. GNU LGPL(Lesser General Public license)
-
 - LGPL코드를 정적 혹은 동적 라이브러리로 사용한 프로그램을 개발하여 판매/배포할 경우에 소스코드를 공개하지 않아도 됨
 
 ### 3. BSD(Berkeley Software Distribution) License
-
 - 아무런 제한이 없음 - 소스코드 공개 의무가 없으며 상용 소프트웨어에서도 사용 가능
 
 ### 4. MIT License
-
 - copyright와 license에 대한 정보만 표기하면 자유롭게 사
 
 ## Issue tip
-
 ```
 ENH: 새기능 혹은 개선
 BUG: 버그수정
@@ -656,15 +658,12 @@ chore: 빌드 테스크 업데이트, 패키지 매니저 설정할 경우 (프�
 ```
 
 ## My thought
-
 어떤것에 기여한다는건 코드에만 해당하는 사항이 아니다. 이를테면 블로그라던지 혹은 번역활동 등을 통해 그것에 공헌할 수 있을것이다. 너무 거창하게 생각하지말고 작은것부터 천천히 노력해나가면 될 것 같다. 다만 꾸준히 하는게 가장 중요한 요소라고 할 수 있을 것이다.
 
 ## 목록
-
 - 번역 :
 
 ## 참고할 것
-
 - [naver open source guide](https://naver.github.io/OpenSourceGuide/book/)
 - [codetriage](https://www.codetriage.com/)
 - [open source guide](https://opensource.guide/legal/)
@@ -678,7 +677,6 @@ chore: 빌드 테스크 업데이트, 패키지 매니저 설정할 경우 (프�
   https://www.openhub.net/
 
 ## Documentation
-
 - LaTeX - [Awesome CI](https://github.com/posquit0/Awesome-CV)
 - perfbook - [Korean-translate](https://github.com/sjp38/perfbook-ko_KR)
 - README.md - [badge](https://github.com/Naereen/badges)
