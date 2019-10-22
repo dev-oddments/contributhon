@@ -31,7 +31,7 @@
   - [x] [2019-Contributhon-중간보고서-이용재](react-native-tutorial/2019-Contributhon-중간보고서-이용재.pdf)
 - [x] 10/12(토) : 오프라인 멘토링
 - [x] 10/20(일) : 결과보고
-  - [x] [2019-Contributhon-결과보고서-이용재](react-native-tutorial/2019-Contributhon-결과보고서-이용재.pdf)
+  - [x] [2019-Contributhon-결과보고서-이용재](react-native-tutorial/2019-Contributhon-결과보고서-이용재.pdf)
 - [ ] 11/2(토) : 발표심사
 
 ## 2. Guideline
