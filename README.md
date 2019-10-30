@@ -6,17 +6,27 @@
 
 # 2019 Open Software Training | 2019 Fall Semester <a name="2019ost"></a>
 ## 1. 일정
-- [ ] 11/01 : 중간발표
+- [x] 11/01 : 중간발표
 - [ ] 12/13 : 최종발표
 - [ ] 12/20 : 멘토링
 
 ## 2. ToDo
+- [ ] 이삭줍기
+  - [x] awesome-hyper | Remove deprecated hyper-copycat plugin on README.md : merged
+  - [x] Fix README.md on innovationacademy-kr/software-resources work properly : merged
+  - [ ] ant-design-mobile | Fix problem that click links in English documents to Chinese docuemnts : add PR
+  - [ ] javascript-algorithm | Update missing art of README.ko-KR.md : add PR
+  - [ ] Azure-Samples/raspberry-pi-web-simulator | Add: Korean translation : add PR
+  - [ ] 33-js-concepts | Update missing part of README.md : add PR
 - [ ] Make [Hyper](https://github.com/zeit/hyper) extension 
-- [ ] Contribute [RNRF](https://github.com/aksonov/react-native-router-flux)
-- [ ] Create Open Source RN module
-- [ ] Make Electron prj
-- ...
-
+  - [x] Developed [space-push](https://github.com/dididy/space-push) inspired by [space-pull](https://github.com/lukaszromerowicz/space-pull)
+  - [ ] ...
+- [ ] React Native Module
+  - [ ] Contriubte [react-native-scrollabe-tabview](https://github.com/ptomasroos/react-native-scrollable-tab-view)
+  - [ ] Contribute [RNRF](https://github.com/aksonov/react-native-router-flux)
+  - [ ] Create Open Source RN module
+- [ ] Flutter
+- [ ] Electron
 
 # 2019 OSS Contributhon | 2019 09/07 ~ 10/20 <a name="2019"></a>
 > Study about OSS(Open Source Software)contribution | [react-native-tutorial](https://github.com/JeffGuKang/react-native-tutorial)
@@ -31,10 +41,19 @@
   - [x] [2019-Contributhon-중간보고서-이용재](react-native-tutorial/2019-Contributhon-중간보고서-이용재.pdf)
 - [x] 10/12(토) : 오프라인 멘토링
 - [x] 10/20(일) : 결과보고
-  - [x] [2019-Contributhon-결과보고서-이용재](react-native-tutorial/2019-Contributhon-결과보고서-이용재.pdf)
+  - [x] [2019-Contributhon-결과보고서-이용재](react-native-tutorial/2019-Contributhon-결과보고서-이용재.pdf)
 - [ ] 11/2(토) : 발표심사
 
-## 2. Guideline
+## 2. 기여한 부분
+- RN State Management Team 팀장
+- setState를 사용한 Base Multi Counter 제작
+- MobX 튜토리얼 작성 - [[repository](https://github.com/JeffGuKang/react-native-tutorial)], [[tutorial](https://jeffgukang.github.io/react-native-tutorial/)]
+- 생성한 Issue 총 [8개](https://github.com/JeffGuKang/react-native-tutorial/issues?q=is%3Aissue+author%3Adididy)
+- merge된 PR 총 [10개](https://github.com/JeffGuKang/react-native-tutorial/pulls?q=is%3Apr+author%3Adididy)
+- code review한 PR 총 3개
+- master에 merge된 commit 총 [33개](https://github.com/JeffGuKang/react-native-tutorial/commits?author=dididy)
+
+## 3. Guideline
 - 폴더구조
   - 코드:
     - 한개인 경우 - `Examples/BasicTutorial/`
