@@ -1,0 +1,34 @@
+# 공소실 3일차
+- 장기영
+- checker 코파운더
+- jsdevkr 공동 운영자
+- 2013년부터 시작 함
+  - 주로 프론트 기술을 다
+- 사용자에게 보여지는 부분에 대한 책임
+- 미적 감각
+- 2002년부터 코딩했는데 
+- react flow가 대항마였는데 TS로 석권..
+  - MS는 C#과 Typescript로 개발 세계 석권
+- electron!
+- 브라우저는 그 속도와 다름
+- 최신코드를 짜더라도 babel을 이용해 구형 브라우저에서 tranpiling 가능하도록 해줌
+- 가장 원시적인 방식이 퍼포먼스는 가장 빠름
+- 순서를 보장해주는 async/await
+  - await의 응답이 있을때까지 멈춤
+- app을 만드는게 표준임
+- reactjs는 상태만 바라보기 때문에 데이터가 한방향으로 흐름
+- next.js
+  - https://nextjs.org/learn/basics/getting-started
+- Ant Design을 사용하는 이유
+  - TypeScript로 만들어져 있다
+  - 좀 더 복잡한 웹 어플리케이션을 만들 수 있다
+  - 스타일링을 자유롭게 할 수 있다
+  - 문서가 잘 정리 되어 있고 오픈소스 관리가 잘 되고 있다.
+  - Star:52.5k, Used by : 85.4k
+  - 간단한 폼 만들어보기
+- two-way binding <- angular
+- 멘토링은 신청받음 다음주 화요일까지임
+  - 구글폼 링크 elearning에 올림
+    - 1지망, 2지망
+    - 1 멘토당 10명정도 배정 됨
+- 수요일에 팀 배정된거 멘토링 별로
