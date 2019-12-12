@@ -7,8 +7,8 @@
 # 2019 Open Software Training | 2019 Fall Semester <a name="2019ost"></a>
 ## 1. 일정
 - [x] 11/01 : 중간발표
-- [ ] 12/13 : 최종발표
-- [ ] 12/20 : 멘토링
+- [x] 11/29 : 최종발표
+- [x] 12/13 : 멘토링
 
 ## 2. ToDo
 - [ ] 이삭줍기
@@ -22,11 +22,104 @@
   - [x] Developed [space-push](https://github.com/dididy/space-push) inspired by [space-pull](https://github.com/lukaszromerowicz/space-pull)
   - [ ] ...
 - [ ] React Native Module
-  - [ ] Contriubte [react-native-scrollabe-tabview](https://github.com/ptomasroos/react-native-scrollable-tab-view)
+  - [x] Contriubte [react-native-scrollabe-tabview](https://github.com/ptomasroos/react-native-scrollable-tab-view)
   - [ ] Contribute [RNRF](https://github.com/aksonov/react-native-router-flux)
   - [ ] Create Open Source RN module
 - [ ] Flutter
 - [ ] Electron
+
+## 3. 면담보고서
+### 1) react-native-tutorial
+> Github 레파지토리 주소 및 간략한 설명(주요 사용 언어, 프로젝트 내용 등)
+  - 레파지토리 주소 url : https://github.com/JeffGuKang/react-native-tutorial
+  - 설명 : React Native를 학습하는 초보자들이 쉽게 따라할 수 있는 Tutorial을 제공함
+  
+> 프로젝트를 어떻게 빌드했는가?
+  - Jekyll을 활용해 작성한 Markdown을 web을 통해 쉽게 접근할 수 있도록 Github Pages에 Deploy 하도록 되어있음
+  - ruby를 사용하므로 `bundle exec jekyll serve` 사용하여 빌드함
+  
+> 본인이 해당 레파지토리에 한 기여 내용 작성
+  - 1주차
+    - 멘토님이 작성하신 Show me the coin 튜토리얼 진행
+    - Expo를 사용하지 않고 react-native를 이용한 개발환경 세팅
+    - Lint와 Prettier를 이용해 코드 스타일을 관리할 수 있도록 세팅 진행
+    - State management팀 합류 및 진행방식 논의
+  - 2주차
+    - 진행방식 결정(한글로 작성 후 영어 번역)
+    - 팀원 간 어떤 state management 튜토리얼을 작성할지 결정(나의 경우 MobX)
+    - setState를 이용한 예제 작성
+      - 팀원 진선님께서 리팩토링 후 tutorial/state브랜치에 PR후 merge
+  - 3주차
+    - 네이밍 컨벤션에 맞춰 폴더 이름 바꾸고 불필요한 .expo 폴더 삭제 PR 후 merge
+    - 팀원이 각자 맡은 state management 주제(나의 경우 MobX)에 따라 튜토리얼 작성
+    - docs/ 폴더에 Jekyll 렌더링을 위한 base 구성 후 PR
+  - 4주차
+    - MobX 튜토리얼 문서 작성 후 PR
+  - 5주차
+    - 5주차까지 작업했던 team-state의 tutorial/state 브랜치를 master에 PR 후 merge
+  - 6주차
+    - State Management Tutorial이 렌더링이 안되고 있는 Issue 해결 PR 후 merge
+    - MobX 튜토리얼 예제코드 리팩토링 PR 후 merge
+    - decorator를 쓰지 않은 Example 추가 및 문서보강 PR 후 merge
+    - 작성한 MobX 문서 01, 02, 03, 04영문 번역 후 PR merge
+  - 정량적 성과자료
+    - issue 생성 갯수 : 8개
+    - 생성 및 반영된 PR 갯수 : 10개
+    - Master에 반영된 Commit 갯수 : 31개
+    - 2019 컨트리뷰톤 **장려상** 수상
+
+### 2) react-native-scrollable-tab-view
+> Github 레파지토리 주소 및 간략한 설명(주요 사용 언어, 프로젝트 내용 등)
+  - 레파지토리 주소 url : https://github.com/ptomasroos/react-native-scrollable-tab-view
+  - 설명 : 어플리케이션에서 탭뷰의 전환을 스와이프(스크롤)를 통해 할 수 있도록 하는 React Native의 모듈
+  - 주간 다운로드 횟수 15,534회, Star 6.3k인 인기있는 React Native 모듈 중 하나
+  
+> 프로젝트를 어떻게 빌드했는가?
+  - React Native 환경이므로 npm 혹은 yarn이 로컬에 설치되어 있어야 함
+  - `npm i` 로 package.json에 있는 의존성을 설치 후 `react-native run-ios`로 가상머신 실행
+  
+> 본인이 해당 레파지토리에 한 기여 내용 작성
+  - 해당 모듈은 내가 실제로 프로젝트에 사용해본 적 있으나 예제코드를 돌려보지 못해 불편함을 느낀 경험이 있음
+  - 문제를 해결하기 위해 예제코드를 살펴보니 버전문제가 있다는 것을 확인
+  - 해결과정
+    - `ncu -u`(npm-check-upadates)를 통해 package.json에 존재하는 의존성의 버전을 최신버전으로 업데이트 함
+    - 하지만 예제에 사용한 모듈 중 업데이트하면서 사용방식이 달라진 것들이 있었음
+      - 이러한 부분은 구글링을 통해 error message를 참조하여 수정함
+      - 추가적으로 babel 환경구성, .gitignore 업데이트 및 필요한 모듈을 그때그때 적용함
+    - 수정한 부분은 실제로 실행해보며 제대로 작동하는지 확인 후 위의 과정 반복
+  - 최종적으로 예제코드가 돌아가지 않는 문제 해결후 PR
+  - 정량적 성과자료
+    - issue 생성 갯수 : 2개
+    - 생성 및 반영된 PR 갯수 : 1개(아직 merge 되지 않음)
+    
+### 3) ETC
+- react-native-router-flux와 react-native-scrollable-tabview 적용한 boilerplate 제작
+- hyper의 extension인 space-push 제작 및 npm에 deploy
+- awesome hyper 리포지토리에서 deprecated된 extension에 대한 정보를 제거 후 PR -> merge됨
+- innovationacademy-kr/software-resources의 오타 수정 후 PR -> merge됨
+
+### 4) 공개 소프트웨어를 통해 오픈소스를 기여하며 느낀점
+> 기존 하고자 한 목표에 대한 달성 여부 
+
+저는 React Native 튜토리얼 중 team-state의 팀장이었고 React Native 상태관리 라이브러리인 MobX 튜토리얼을 제작하는 역할을 맡았습니다. 현재 시점에 MobX 튜토리얼 한글, 영문 문서 제작을 완료한 상태이며 모든 PR이 merge 되었습니다. 저에게 주어진 Role에대한 목표는 달성했습니다. 또한 즐겨쓰는 React Native의 모듈의 문제점을 해결하여 PR을 실제로 진행해보기도 하였습니다.
+
+> 앞으로의 오픈소스에 대한 목표 
+
+이번에 튜토리얼을 써보면서 막막하고 어렵다는 느낌이 있었습니다. 그러면서도 한편으론 제가 사용하면서 어려움을 느꼈던 React Native 모듈에 대한 튜토리얼을 써볼수도 있겠다는 생각이 들었습니다. 아마도 빠른 시일 내에 해당 작업을 시작하게 될 것 같습니다. 
+
+또다른 목표는 리엑트 네이티브 모듈을 직접 만들어 보는 것 입니다. 예전에 모듈 코드를 잠깐 본 적이 있는데 생각보다 제작이 어렵지 않을 수 있겠다는 생각을 했습니다. 좀 더 실력을 키워서 사람들의 기존에 불편해 하거나 귀찮은 과정을 개선하는 오픈소스를 제작해보고 싶습니다.
+
+이외에도 GitHub을 꾸준히 주시하면서 제가 기여할 수 있는 Issue에 대해서 작업하거나 Issue를 직접 남기는 등 컨트리뷰톤을 진행하면서 배웠던 Contribution Cycle을 적용해서 오픈소스 활동을 지속해 나갈 것 입니다.
+
+> 공개소프트웨어 실습 시작전의 Git, 오픈 소스 등에 대한 역량과 실습 후의 역량에 대한 서술 및 후기
+
+Git은 사용법 정도만 알고있었고 큰 규모의 협업을 하는데 사용해본적이 없었으나 이번 컨트리뷰톤을 통해 Gitflow 방식에 대해서 이해하고 이를 계속 적용하여 작업을 진행했기 대문에 익숙해질 수 있었습니다. 
+
+또한 GitHub Issue, PR등을 작성할 때 처음에는 공백으로 두는 경우도 있었는데 이제는 다른 컨트리뷰터가 이해할 수 있도록 작성하려 노력 중 입니다.
+
+Reat Native는 학교 수업(실정코딩)을 통해 잠깐 배운것이 전부이지만 이번 컨트리뷰톤을 통해 상태관리 라이브러리인 MobX에 대해서 튜토리얼 문서와 예제코드를 작성해보면서 MobX에 익숙해질 수 있었고 개인적으로 작업하던 코드에도 MobX를 적용해보거나 해커톤에서 React Native를 사용하여 프로젝트를 해보는 등 다양하게 응용해볼 수 있게 되었습니다.
+
+
 
 # 2019 OSS Contributhon | 2019 09/07 ~ 10/20 <a name="2019"></a>
 > Study about OSS(Open Source Software)contribution | [react-native-tutorial](https://github.com/JeffGuKang/react-native-tutorial)
